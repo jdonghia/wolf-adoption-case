@@ -1,0 +1,39 @@
+.intro {
+    background: url(../img/bg-wolf.png) no-repeat center / cover;
+    height: 72.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__description {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.intro__visualBar {
+    height: .6rem;
+    width: 10rem;
+    background: #fff;
+}
+
+.intro__title {
+    font-size: 6rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.intro__text {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+   
+   
+}
