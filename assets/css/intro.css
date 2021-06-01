@@ -1,6 +1,6 @@
 .intro {
     background: url(../img/bg-wolf.png) no-repeat center / cover;
-    height: 72.5vh;
+    height: calc(72.5vh + 7.5rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
     
 }
 
