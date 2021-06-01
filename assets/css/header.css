@@ -1,19 +1,21 @@
 .header {
     background: #85CDF5;
-    position: sticky;
+    position: fixed;
     top: 0;
-    padding: .75rem 0 .5rem;
+    width: 100%;
 }
 
 .header__ul {
+    padding: .75rem 0 .5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .header__logo {
-    width: 6rem;
+    transition: .5s;
     height: 6rem;
+    width: 6rem;  
 }
 
 .header__link {
@@ -21,6 +23,7 @@
     font-size: 1.8rem;
     color: #333;
     font-weight: bold;
+    transition: .5s; 
 }
 
 .header__link::after {
@@ -43,3 +46,4 @@
 .header__link--toLeft:after {
     transform-origin: 100% 50%;
 }
+
