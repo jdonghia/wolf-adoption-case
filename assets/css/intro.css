@@ -1,25 +1,36 @@
 .intro {
-    background: url(../img/bg-wolf.png) no-repeat center / cover;
+    background:  url(../img/bg-wolf.jpg) no-repeat center;
     height: calc(72.5vh + 7.5rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.intro__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
 }
 
 .intro__description {
+    margin-top: 5rem;
     width: 40%;
-    height: 40%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    z-index: 1;
     
 }
 
 .intro__visualBar {
-    height: .6rem;
+    height: .4rem;
     width: 10rem;
     background: #fff;
 }
