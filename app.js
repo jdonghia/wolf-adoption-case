@@ -1,5 +1,5 @@
 (function() {
-        window.onscroll = () => {hideHeader()};
+        window.onscroll = () => hideHeader();
         
         function hideHeader() {
 
@@ -16,7 +16,10 @@
                 $headerLogo.style.marginLeft = "0";
             }
         }
-
-
 })();
+
+
+
+
+
 
