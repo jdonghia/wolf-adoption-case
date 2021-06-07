@@ -14,7 +14,30 @@
     height: 100%;
     background: #000;
     opacity: 0.5;
+    /*animation: fade 10s linear infinite;*/
 }
+
+/*@Keyframes fade {
+    0%{
+        opacity: 0.5;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}*/
 
 .intro__description {
     margin-top: 5rem;
@@ -30,9 +53,14 @@
 }
 
 .intro__visualBar {
-    height: .4rem;
+    height: .5rem;
     width: 10rem;
     background: #fff;
+    transition: width .7s ease-in-out;
+}
+.intro__visualBar:hover {
+  
+    width: 100%;
 }
 
 .intro__title {
