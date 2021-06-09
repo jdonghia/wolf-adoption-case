@@ -1,10 +1,11 @@
 .intro {
-    background:  url(../img/bg-wolf.jpg) no-repeat center;
+    background:  url(../img/bg-wolf3.jpg) no-repeat center;
     height: calc(72.5vh + 7.5rem);
     display: grid;
     place-items: center;
-    position: relative;
+    position: relative;    
 }
+
 
 .intro__mask {
     position: absolute;
@@ -13,27 +14,23 @@
     width: 100%;
     height: 100%;
     background: #000;
-    opacity: 0.5;
+    opacity: .5;
     /*animation: fade 10s linear infinite;*/
 }
 
-/*@Keyframes fade {
-    0%{
+/*@keyframes fade {
+    0% { 
         opacity: 0.5;
     }
-
     25% {
         opacity: 0.75;
     }
-
     50% {
         opacity: 1;
     }
-
     75% {
         opacity: 0.75;
     }
-
     100% {
         opacity: 0.5;
     }
@@ -59,8 +56,7 @@
     transition: width .7s ease-in-out;
 }
 .intro__visualBar:hover {
-  
-    width: 100%;
+    width: 90%;
 }
 
 .intro__title {
@@ -77,3 +73,49 @@
    
    
 }
+
+
+
+
+
+
+/*.intro2{
+    height: calc(72.5vh + 7.5rem);
+}
+
+.intro2__bgs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.intro2__bgs .intro2__bg {
+    display: block;
+    min-width: 100%;
+    height: 100%;
+    animation: slide 20s ease-in-out infinite;
+}
+
+.intro2__bg--1 {
+    background: url(../img/bg-wolf4.jpg) no-repeat center / cover;
+}
+.intro2__bg--3 {
+    background: url(../img/bg-wolf2.jpg)no-repeat center / cover;
+}
+.intro2__bg--2 {
+    background: url(../img/bg-wolf3.jpg)no-repeat center / cover;
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-1903px);
+    }
+    50% {
+        transform: translateX(calc(-1903px*2));
+    }
+}*/
