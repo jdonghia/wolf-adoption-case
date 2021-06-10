@@ -1,51 +1,49 @@
 .header {
-    background: #85CDF5;
-   
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+  background: #85cdf5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .header__ul {
-    padding: .75rem 0 .5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  padding: 0.75rem 0 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header__logo {
-    transition: .5s;
-    height: 6rem;
-    width: 6rem;  
+  transition: 0.5s;
+  height: 6rem;
+  width: 6rem;
 }
 
 .header__link {
-    text-decoration: none;
-    font-size: 1.8rem;
-    color: #333;
-    font-weight: bold;
-    transition: .5s; 
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
+  transition: 0.5s;
 }
 
 .header__link::after {
-    display: block;
-    content: "";
-    padding-top: .2rem;
-    border-bottom: solid 3px #333;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: "";
+  padding-top: 0.2rem;
+  border-bottom: solid 3px #333;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .header__link:hover:after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .header__link--toRight:after {
-    transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
 }
 
 .header__link--toLeft:after {
-    transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
 }
-
