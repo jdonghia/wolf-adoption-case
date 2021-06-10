@@ -1,121 +1,95 @@
 .intro {
-    background:  url(../img/bg-wolf3.jpg) no-repeat center;
-    height: calc(72.5vh + 7.5rem);
-    display: grid;
-    place-items: center;
-    position: relative;    
+  height: calc(72.5vh + 7.5rem);
+  position: relative;
+  display: grid;
+  place-items: center;
 }
 
-
-.intro__mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .5;
-    /*animation: fade 10s linear infinite;*/
+.intro__bgs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
 }
-
-/*@keyframes fade {
-    0% { 
-        opacity: 0.5;
-    }
-    25% {
-        opacity: 0.75;
-    }
-    50% {
-        opacity: 1;
-    }
-    75% {
-        opacity: 0.75;
-    }
-    100% {
-        opacity: 0.5;
-    }
-}*/
 
 .intro__description {
-    margin-top: 5rem;
-    width: 40%;
-    height: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    z-index: 1;
-    
-}
-
-.intro__visualBar {
-    height: .5rem;
-    width: 10rem;
-    background: #fff;
-    transition: width .7s ease-in-out;
-}
-.intro__visualBar:hover {
-    width: 90%;
+  position: absolute;
+  width: 40%;
+  text-align: center;
+  color: white;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro__title {
-    font-size: 6rem;
-    color: #fff;
-    margin-bottom: 2rem;
-    font-weight: 700;
+  font-size: 6rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 .intro__text {
-    font-size: 2rem;
-    color: #fff;
-    text-align: center;
-   
-   
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
 }
 
-
-
-
-
-
-/*.intro2{
-    height: calc(72.5vh + 7.5rem);
+.intro__visualBar {
+  height: 0.5rem;
+  width: 10rem;
+  background: #fff;
+  transition: width 0.7s ease-in-out;
+  display: block;
+  margin-bottom: 1rem;
 }
 
-.intro2__bgs {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    overflow: hidden;
-    position: relative;
+.intro__visualBar:hover {
+  width: 90%;
 }
 
-.intro2__bgs .intro2__bg {
-    display: block;
-    min-width: 100%;
-    height: 100%;
-    animation: slide 20s ease-in-out infinite;
+.intro__bgs .intro__bg {
+  display: block;
+  min-width: 100%;
+  height: 100%;
+  animation: slide 50s ease-in-out infinite;
 }
 
-.intro2__bg--1 {
-    background: url(../img/bg-wolf4.jpg) no-repeat center / cover;
+.intro__mask {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
-.intro2__bg--3 {
-    background: url(../img/bg-wolf2.jpg)no-repeat center / cover;
+
+.intro__bg--1 {
+  background: url(../img/bg-wolf4.jpg) no-repeat center / cover;
 }
-.intro2__bg--2 {
-    background: url(../img/bg-wolf3.jpg)no-repeat center / cover;
+.intro__bg--3 {
+  background: url(../img/bg-wolf2.jpg) no-repeat center / cover;
+}
+.intro__bg--2 {
+  background: url(../img/bg-wolf3.jpg) no-repeat center / cover;
 }
 
 @keyframes slide {
-    0%, 100% {
-        transform: translateX(0);
-    }
-    25%, 75% {
-        transform: translateX(-1903px);
-    }
-    50% {
-        transform: translateX(calc(-1903px*2));
-    }
-}*/
+  0%,
+  12.5%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25%,
+  37.5%,
+  75%,
+  87.5% {
+    transform: translateX(-1903px);
+  }
+
+  50%,
+  62.5% {
+    transform: translateX(calc(-1903px * 2));
+  }
+}
