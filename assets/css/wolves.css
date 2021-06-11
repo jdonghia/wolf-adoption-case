@@ -1,0 +1,83 @@
+.wolves {
+  display: grid;
+  place-items: center;
+}
+
+.wolves__title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #deb959;
+  margin: 2rem 0;
+}
+
+.wolf {
+  display: flex;
+  width: 50%;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.wolf__description {
+  width: 50%;
+  margin-top: 1.5rem;
+}
+
+.wolf__name {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.wolf__age {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.wolf__text {
+  font-size: 1.5rem;
+  line-height: 20px;
+  margin: 0.5rem 0;
+}
+
+.wolf__bg {
+  background: #2c5680;
+  height: 90%;
+  width: 90%;
+  border: 2px solid black;
+}
+
+.wolf__container {
+  width: 45%;
+  height: 20rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.wolf__img {
+  height: 92.5%;
+  width: 92.5%;
+}
+
+.wolf__bg--1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wolf__img--1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.wolf__bg--2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wolf__img--2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
