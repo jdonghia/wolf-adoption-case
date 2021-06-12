@@ -56,6 +56,7 @@
 .wolf__img {
   height: 92.5%;
   width: 92.5%;
+  border: 3px solid black;
 }
 
 .wolf__bg--1 {
