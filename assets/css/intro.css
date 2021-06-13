@@ -43,6 +43,7 @@
   background: #fff;
   transition: width 0.7s ease-in-out;
   margin-bottom: 1rem;
+  z-index: 1;
 }
 
 .intro__visualBar:hover {
@@ -82,11 +83,33 @@
   37.5%,
   75%,
   87.5% {
-    transform: translateX(-1903px);
+    transform: translateX(-100%);
   }
 
   50%,
   62.5% {
-    transform: translateX(calc(-1903px * 2));
+    transform: translateX(-200%);
   }
 }
+
+/*.intro__buttons {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  margin-top: 4rem;
+}
+
+.intro__button {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+}
+
+.intro__icon {
+  font-size: 2rem;
+}*/
