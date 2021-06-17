@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
 
-    <script src="app.js"></script>
+    <!--<script src="app.js"></script>-->
   </head>
   <body>
     <header class="header">
@@ -116,12 +116,12 @@
           <div class="wolf__bg wolf__bg--1"></div>
           <img
             alt="Wolf for adoption"
-            class="wolf__img wolf__img--1"
+            class="wolf__img wolf__img--1" data-wolfImg
           />
         </div>
         <div class="wolf__description">
-          <h3 class="wolf__name">Nome do Lobo</h3>
-          <h4 class="wolf__age">Idade: XX anos</h4>
+          <h3 class="wolf__name" data-wolfName>Nome do Lobo</h3>
+          <h4 class="wolf__age" data-wolfAge>Idade: XX anos</h4>
           <p class="wolf__text">
             Não obstante, o surgimento do comércio virtual faz parte de um
             processo de gerenciamento do levantamento das variáveis envolvidas.
@@ -137,8 +137,8 @@
       </div>
       <div class="wolf">
         <div class="wolf__description">
-          <h3 class="wolf__name">Nome do Lobo</h3>
-          <h4 class="wolf__age">Idade: XX anos</h4>
+          <h3 class="wolf__name" data-wolfName>Nome do Lobo</h3>
+          <h4 class="wolf__age" data-wolfAge>Idade: XX anos</h4>
           <p class="wolf__text">
             Não obstante, o surgimento do comércio virtual faz parte de um
             processo de gerenciamento do levantamento das variáveis envolvidas.
@@ -155,7 +155,7 @@
           <div class="wolf__bg wolf__bg--2"></div>
           <img
             alt="Wolf for adoption"
-            class="wolf__img wolf__img--2"
+            class="wolf__img wolf__img--2" data-wolfImg
           />
         </div>
       </div>
@@ -202,15 +202,12 @@
     </footer>
   </body>
 
-  <!--<script src="controller.js"></script>
-  <script src="view.js"></script>
-  <script src="model.js"></script>
-  <script>
-    const c = new Controller();
-    c.loadAPI()
-    c.teste();
-    
-    
-    
-  </script>-->
+  <script src="./js/app/context/LobinhosAPI.js"></script>
+  <script src="./js/app/context/WolvesEndpoint.js"></script>
+  <script src="./js/app/controllers/AppController.js"></script>
+  <script src="./js/app/models/Wolf.js"></script>
+  <script src="./js/app/views/WolvesView.js"></script>
+  <script src="./js/app/views/HeaderView.js"></script>
+  <script src="js/app/app.js"></script>
+
 </html>
